@@ -1,0 +1,117 @@
+<!--
+  ABOUT / APPROACH PAGE — persuasionfirstai.com/about.html
+  Upload BOTH this file (about.html) and amy.jpg to the same folder in your repo.
+  The photo is referenced as "amy.jpg" — keep that filename or update the <img src> below.
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amy Henry — Persuasion-First AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ink:#000000; --ink-2:#071827; --card:#0F2E4D; --line:#173B57;
+    --paper:#FFFFFF; --cream:#E8E5E0; --muted:#888888;
+    --gold:#C9A961; --gold-soft:#D8BE86; --amber:#F4C842;
+    --teal:#1E5F6B; --cyan:#5FD4D4; --ice:#9FD8FF;
+    --serif:'Fraunces',Georgia,serif; --sans:'DM Sans',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--ink);color:var(--cream);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+  body{
+    background:
+      radial-gradient(1000px 600px at 85% -5%, rgba(95,212,212,.10), transparent 60%),
+      radial-gradient(800px 700px at -10% 30%, rgba(15,46,77,.55), transparent 55%),
+      var(--ink);
+    padding:0 0 80px;
+  }
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+  .eyebrow{font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--cyan);font-weight:600;margin-bottom:16px}
+
+  /* hero */
+  .hero{display:grid;grid-template-columns:380px 1fr;gap:48px;align-items:center;padding:72px 0 64px}
+  .photo{position:relative}
+  .photo img{width:100%;height:auto;display:block;border-radius:16px;border:1px solid var(--line)}
+  .photo::after{content:"";position:absolute;inset:-1px;border-radius:16px;box-shadow:0 40px 90px -40px rgba(95,212,212,.35);pointer-events:none}
+  h1{font-family:var(--serif);font-weight:500;font-size:clamp(32px,5.2vw,50px);line-height:1.04;letter-spacing:-.015em;color:var(--paper);margin-bottom:22px}
+  h1 em{font-style:normal;color:var(--gold-soft)}
+  .lede{font-size:17px;line-height:1.7;color:var(--cream);max-width:46ch}
+  .name-tag{font-size:13px;letter-spacing:.05em;color:var(--muted);margin-top:24px}
+  .name-tag b{color:var(--gold);font-weight:600}
+
+  /* sections */
+  .section{padding:46px 0;border-top:1px solid var(--line);max-width:760px}
+  h2{font-family:var(--serif);font-weight:500;font-size:clamp(23px,3.6vw,33px);line-height:1.18;letter-spacing:-.01em;color:var(--paper);margin-bottom:18px}
+  .section p{font-size:17px;line-height:1.75;color:var(--cream);margin-bottom:16px;max-width:60ch}
+  .section p:last-child{margin-bottom:0}
+
+  .pull{font-family:var(--sans);font-weight:600;font-size:clamp(19px,2.6vw,23px);line-height:1.5;color:var(--gold);max-width:32ch;margin:10px 0;padding-left:20px;border-left:2px solid var(--cyan)}
+
+  /* close */
+  .close{padding:56px 0 0;max-width:760px}
+  .close p{font-family:var(--serif);font-size:clamp(22px,3.6vw,30px);font-weight:500;line-height:1.4;color:var(--paper)}
+  .close p em{font-style:normal;color:var(--gold-soft)}
+  .links{margin-top:36px;display:flex;flex-wrap:wrap;gap:18px 22px;align-items:center}
+  .links a{text-decoration:none;font-size:17px;font-weight:600;letter-spacing:.01em;transition:all .15s}
+  .links a.primary{display:inline-block;color:var(--cyan);border:1px solid var(--cyan);padding:13px 22px;border-radius:10px}
+  .links a.primary:hover{background:var(--cyan);color:var(--ink)}
+  .links a.soft{color:var(--cream);border-bottom:1px solid transparent}
+  .links a.soft:hover{border-color:var(--gold-soft);color:var(--gold-soft)}
+
+  footer{margin-top:70px;padding-top:24px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);letter-spacing:.04em}
+  footer b{color:var(--gold);font-weight:600}
+
+  @media (max-width:760px){
+    .hero{grid-template-columns:1fr;gap:30px;padding:48px 0 44px;text-align:left}
+    .photo{max-width:300px}
+  }
+</style>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="photo">
+      <img src="amy.jpg" alt="Amy Henry">
+    </div>
+    <div>
+      <div class="eyebrow">Amy Henry · Persuasion-First AI</div>
+      <h1>Everyone's teaching AI to sound polished. I teach it to sound like the person who <em>closes</em>.</h1>
+      <p class="lede">Eight years carrying Fortune 500 quotas. I left the corporate version of selling to work on the one thing every tool keeps stripping out — the human part.</p>
+      <div class="name-tag"><b>Ex-Fortune 500 closer</b> · 400% over quota · now building the human layer back into AI-driven selling</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="eyebrow">Why I walked</div>
+    <h2>I was good at the number. I left anyway.</h2>
+    <p>400% over quota at my peak. Fortune 500 deals closed. I didn't leave because I'd run out of room — I left because I could see what was coming.</p>
+    <p>AI was about to make a lot of good sales teams quietly worse at the one thing that actually closes a deal. And most of them would blame the market, the leads, the comp plan — everything except the real cause.</p>
+  </div>
+
+  <div class="section">
+    <div class="eyebrow">What I keep seeing</div>
+    <h2>The whole market started sounding the same.</h2>
+    <p>Every team got handed the same tools and the same prompts at the same moment. So outreach everywhere got faster, cleaner — and completely forgettable. Buyers can feel the machine now. Not because the grammar's off. Because nothing in the message was written to make them feel understood.</p>
+    <div class="pull">AI doesn't close. People close. AI just hands a good closer leverage they've never had — if someone teaches it what the best ones actually do.</div>
+  </div>
+
+  <div class="section">
+    <div class="eyebrow">What's actually valuable to a sales org</div>
+    <h2>The teams pulling ahead aren't producing more. They're understanding more.</h2>
+    <p>The edge was never volume. It's reading what a buyer wants and fears before a single word goes out — and building that into everything the AI touches. That's not a software problem. It's a human one.</p>
+    <p>Right now, it's the rarest thing in a pipeline. Which is exactly why it's worth so much.</p>
+  </div>
+
+  <div class="close">
+    <p>If any of that felt true while you were reading it — you probably saw it coming too. <em>That's usually where the interesting conversations start.</em></p>
+    <div class="links">
+      <a class="primary" href="https://www.linkedin.com/in/amy-m-henry" target="_blank" rel="noopener">Find me on LinkedIn — send me a DM →</a>
+      <a class="soft" href="./">See where your own team actually stands →</a>
+    </div>
+  </div>
+
+  <footer><b>Amy Henry</b> · Persuasion-First AI</footer>
+
+</div>
